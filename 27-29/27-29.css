@@ -1,0 +1,36 @@
+.parent{
+    width: 800px;
+    padding: 0px;
+    background-color: #eee;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.line-1,
+.line-2 div,
+.line-3 div,
+.line-4 div{
+    background-color: lightgray;
+    float: left;
+    text-align: center;
+    margin: 15px 0 0 15px;
+    padding: 10px 0px;
+}
+div{
+    overflow: hidden;
+}
+.line-1{
+    width: calc(100% - 30px);
+}
+.clair{
+    clear: both;
+}
+.parent .line-2 div{
+    width: calc((100% - 60px) / 3);
+}
+.parent .line-3 div{
+    width: calc((100% - 45px) / 2);
+}
+.parent .line-4 div{
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}

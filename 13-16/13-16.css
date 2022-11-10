@@ -1,0 +1,21 @@
+.parent .child .title{
+    color: red;
+}
+.parent .title{
+    color: blue;
+}
+
+ div p,
+ .title {
+    color: green;
+}
+.ass-2 div{
+    background-color: darkred;
+    width: fit-content;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    max-height: 40px;
+    color: white;
+} 

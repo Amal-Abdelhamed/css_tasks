@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+.ass-1{
+    width:300px ;
+    height: 200px;
+    margin: 50px auto;
+    color:#0bf ;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ass-1::before{
+    position: absolute;
+    content: "";
+    width:310px ;
+    height: 200px;
+    background-color:#0bf ;
+    z-index: -1;
+    transform: rotate(-5deg);
+}
+
+.ass-1::after{
+    position: absolute;
+    content: "";
+    width:310px ;
+    height: 200px;
+    background-color:rgb(255, 0, 128) ;
+    z-index: -2;
+    transform: rotate(5deg);
+}
+/* ass-2 */
+.ass-2{
+    width: 200px;
+    height: 200px;
+    margin: auto ;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ass-2::before{
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border:10px solid rgb(255, 0, 128);
+    border-left-color: white;
+    border-radius: 50%;
+    transition: .5s .5s ease ;
+}
+
+.ass-2::after{
+    content: " ";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border:10px solid #0bf;
+    border-right-color: white;
+    border-radius: 50%;
+    transition:.5s 0s ease ;
+}
+
+.ass-2:hover::before{
+    transform: rotate(360deg);
+}
+
+.ass-2:hover::after{
+    transform: rotate(360deg);
+}
+

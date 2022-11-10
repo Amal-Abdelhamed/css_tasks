@@ -1,0 +1,22 @@
+.ass-1,
+.ass-2,
+.ass-3,
+.ass-4,
+.ass-5,
+.ass-6{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 30px;
+}
+/* ass-1 */
+.ass-1 div.main-red{
+    color: red;
+}
+/* ass-2 */
+.ass-2 .parent div:nth-child(2){
+    color: red;
+}
+/* ass-3 */
+.ass-3 div:nth-child(2) .baby  {
+    color: red;
+}

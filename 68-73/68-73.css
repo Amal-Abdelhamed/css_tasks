@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --color-1:#f52;
+    --color-2: #2a9;
+}
+
+.ass-1 h1{
+    margin: 50px auto;
+    background-color: var(--color-1);
+    color: white;
+    width: 150px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ass-1 h1::before,
+.ass-1 h1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    z-index: -1;
+}
+
+.ass-1 h1::before{
+    transform: skew(10deg , 10deg);
+}
+
+.ass-1 h1::after{
+    transform: skew(-10deg ,-10deg);
+}
+
+/* ass-2 */
+
+.ass-2 h1{
+    margin: 50px auto;
+    background-color: var(--color-2);
+    color: white;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ass-2 h1::before,
+.ass-2 h1::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    background-color: var(--color-2);
+    z-index: -1;
+}
+
+.ass-2 h1::before{
+    left:-10px;
+    transform: skew(15deg);
+    width: 40px;
+
+}
+
+.ass-2 h1::after{
+    left: -40px;
+    transform: skew(15deg);
+    width: 20px;
+}
+/* ass-3 
+    transform: translate x(20px) translate y(100px) scale x(3) skew y(0.2678) skew y(0) scale y(3)
+*/
+
+.ass-4{
+    transform: rotate(-45deg);
+}
+
+.ass-4 div{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto ;
+    margin-top: 200px;
+    background-color: black;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    position: relative;
+}
+
+.ass-4 div::after{
+    position: absolute;
+    content: "";
+    width: 282px;
+    height: 250px;
+    background-color: rgb(189, 184, 184);
+    border-bottom: 5px solid black;
+    z-index: -1;
+    transform: rotate(45deg);
+    transform-origin: left top;
+    left: -4px;
+}
+
+.ass-4 div::before{
+    position: absolute;
+    content: "Amal";
+    color: white;
+    transform: rotate(45deg);
+    top: 176px;
+    left: -152px;
+    font-size: 30px;
+}
+
+/* ass-5 */
+
+.ass-5 div{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.ass-5 div:hover{
+    transform: rotateY(-180deg);
+}
+
+.ass-5 div::before{
+    position: absolute;
+    content: "Front";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f36;
+    color: white;
+    font-size: 30px;
+}
+
+.ass-5 div::after{
+    position: absolute;
+    content: "Back";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29f;
+    color: white;
+    font-size: 30px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+/* ass-6 */
+
+
+.ass-6 div{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.ass-6 div:hover{
+    transform: rotateX(-180deg);
+}
+
+.ass-6 div::before{
+    position: absolute;
+    content: "Front";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f36;
+    color: white;
+    font-size: 30px;
+}
+
+.ass-6 div::after{
+    position: absolute;
+    content: "Back";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29f;
+    color: white;
+    font-size: 30px;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}

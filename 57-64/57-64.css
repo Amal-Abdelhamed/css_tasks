@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ass-1{
+    display: flex;
+    justify-content: center;
+}
+
+.ass-1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template: 2em 1fr / repeat(3,1fr);
+  }
+ .ass-1 .grid div{
+    background-color:#689;
+    counter-increment: num;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ass-1 .grid div::before{
+    content: "Element "counter(num);
+    color: white;
+  }
+
+  /* ass-2 */
+  
+  .ass-2{
+      width: 100vw;
+      height: 100vh;
+  }
+  .layout{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: 50px auto 50px;
+      grid-template-areas: "h h h h " "sec sec sec sid" "f f f f";
+      color: white;
+  }
+  header{
+      grid-area: h;
+      background-color: #0bf;
+      padding: 10px;
+  }
+
+  section{
+    grid-area:sec;
+    background-color: #f52;
+    padding: 10px;
+  }
+
+footer{
+    grid-area:f;
+    background-color: #099;
+    padding: 10px;
+}
+
+aside{
+    grid-area:sid;
+    background-color: #689;
+    padding: 10px;
+}
+
+header::before{
+    content: "Header";
+}
+
+section::before{
+    content: "Section";
+}
+
+aside::before{
+    content: "Aside";
+}
+
+footer::before{
+    content: "Footer";
+}
+
+/* ass-3 */
+
+.ass-3{
+    display: flex;
+    justify-content: center;
+}
+
+.ass-3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template: 1fr auto / auto 1fr 1fr auto;
+  }
+
+.ass-3 .grid div{
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* ass-4 */
+.ass-4{
+    display: flex;
+    justify-content: center;
+}
+
+.ass-4 .grid{
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows:repeat(6,1fr) ;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.ass-4 .grid div{
+    background-color: #29f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    grid-column: 1/4;
+    order: 8;
+}
+
+.two{
+    grid-column: 1/3;
+    order: 2;
+}
+
+.three{
+    order: 3;
+}
+
+.four{
+    order: 4;
+}
+
+.five{
+    grid-area: 3/2/6/4;
+    order:5;
+}
+
+.six{
+    order: 6;
+}
+
+.seven{
+    order: 7;
+}
+.eight{
+grid-column: 1/4;
+}
+
+/* ass-5 */
+
+.ass-5{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ass-5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, auto);
+    align-content: space-between;
+  }
+
+.ass-5 .grid div{
+    background-color:#f26 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ass-6 */
+
+.ass-6{
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,auto);
+    line-height: 1.7em;
+}
+
+.employee-1{
+    grid-area: 1/1/2/3;
+}
+
+.employee-3{
+    grid-area: 1/4/4/5;
+}
+
+.employee-4{
+    grid-area: 2/1/4/2;
+}
+
+.employee-5{
+    grid-area:2/2/3/4 ;
+}
+
+.employee-6{
+    grid-area: 3/2/4/4;
+}
+
+.employee-1,
+.employee-2,
+.employee-4,
+.employee-6,
+.employee-7,
+.employee-9,
+.employee-10{
+    background-color: white;
+    padding: 20px;
+    border-bottom: 3px solid red;
+}
+
+.employee-3,
+.employee-5,
+.employee-8{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid red;
+}
+
+
+.ass-6 .name,
+.ass-6 .job-description{
+    font-weight: bold;
+}
+.ass-6 .job-title{
+    color: rgb(145, 143, 143);
+    font-weight: bold;
+}
+
+.ass-6 .job-title,
+.ass-6 .informations{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.cell{
+    position: relative;
+}
+
+.cell::before{
+    content: " '' ";
+    position: absolute;
+    color: rgb(145, 143, 143);
+    font-size: 50px;
+    bottom: 0px;
+    right: 15px;
+    transform: rotate(
+15deg
+);
+}

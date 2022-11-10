@@ -1,0 +1,68 @@
+/* assignment 1 */
+.one {
+    text-align: center;
+    border: 2px solid rgb(248, 77, 9);
+    padding: 10px ;
+    margin: 10px;
+}
+
+.two {text-align: center;
+    border: 2px solid rgb(2, 179, 164);
+    padding: 10px ;
+    margin: 10px;
+}
+
+div p {
+    border: inherit;
+    padding: inherit;
+    margin: inherit;
+    background-color: #eee;
+}
+/* assignment 2 */
+.ass-2-1{
+    font-family: 'open sans' , sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ass-2-2{
+    font-family:'cairo', sans-serif ;
+    font-weight: 700;
+}
+
+.ass-2-3{
+    font-family:'jomhuria', cursive ;
+    font-weight: 400;
+}
+/* assignment 3 */
+html{
+    font-size: 20px;
+}
+
+.ass-3-1{
+    font-size: 2.5rem;
+}
+
+.ass-3-2{
+    font-size: 2rem;
+}
+
+.ass-3-3{
+    font-size: 1.5rem;
+}
+
+.ass-3-1,
+.ass-3-2,
+.ass-3-3,
+.ass-2-1,
+.ass-2-2,
+.ass-2-3 {
+    text-align: center;
+    text-transform: capitalize;  
+}
+
+.ass-3-1,
+.ass-3-2,
+.ass-3-3 {
+    font-family: 'Cabin', sans-serif;
+}

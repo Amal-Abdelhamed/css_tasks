@@ -1,0 +1,251 @@
+.ass-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px
+}
+
+.ass-1 div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 6px 0  #FF5722,
+                -6px 0  #03A9F4;
+    color: #FF5722;
+}
+
+.ass-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px
+}
+
+.ass-2 .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-content: space-between; */
+}
+
+.ass-2 .parent div{
+    background-color: #f44336;
+    text-align: center;
+    width: calc(90% / 3);
+    color: white;
+    padding: 5px;
+}
+
+.ass-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.ass-3 .parent div{
+    background-color: #607d8b;
+    width: calc(90% / 3);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-3 .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.ass-3 .one{
+    order: 6;
+    align-self: flex-end;
+}
+
+.ass-3 .two{
+    order: 5;
+}
+
+.ass-3 .three{
+    order: 2;
+    align-self: flex-start;
+}
+
+.ass-3 .four{
+    order: 3;
+}
+
+.ass-3 .five{
+    order: 4;
+}
+
+.ass-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.ass-4 .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+
+.ass-4 .parent div{
+    background-color: #099;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-4 .one,
+.ass-4 .three{
+    align-self: flex-end;
+}
+
+.ass-4 .two{
+    width: calc(50%);
+}
+.ass-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.ass-5 .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.ass-5 .parent div{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((80% -20px)/4);
+    height:calc(50% - 10px);
+    color: white;
+}
+
+.ass-5 .two,
+.ass-5 .four{
+    align-self: flex-end;
+}
+
+.ass-5 .one{
+    background-color:#ff9800 ;
+}
+.ass-5 .two{
+    background-color: #8bc34a;
+}
+.ass-5 .three{
+    background-color: #795548;
+}
+
+.ass-5 .four{
+    background-color:#673ab7 ;
+}
+
+:root{
+    --main-padding:10px;
+    --main-margine:10px;
+    --main-color:#ddd
+    ;
+}
+.page{
+    width: 100vw;
+    background-color: #eee;
+    padding:var(--main-padding) ;
+    margin: var(--main-margine);
+}
+.page .header{
+    height: 50px;
+    margin: var(--main-margine);
+    padding: var(--main-padding);
+    display: flex;
+}
+.page .header div,
+.page .header ul{
+    padding: var(--main-padding);
+    margin: var(--main-margine);
+    background-color: var(--main-color);
+}
+.page .header .logo{
+    width: calc((100% - 60px)/10);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page .header .links{
+    height: 30px;
+    width: calc((100% - 60px)*9/10);
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+.page .header .links li{
+    margin: var(--main-margine);
+}
+.page .main-area{
+    margin: var(--main-margine);
+    padding: var(--main-padding);
+    display: flex;
+}
+.page .main-area .content{
+    width: calc((100% -60)*2/3);
+    height: 400px;
+    margin: var(--main-margine);
+    padding: var(--main-padding);
+    background-color: var(--main-color);
+}
+.page .main-area .sidebar{
+    width: calc((100% -60)/3);
+    height: 400px;
+    margin: var(--main-margine);
+    padding: var(--main-padding);
+    background-color: var(--main-color);
+}
+.page .footer{
+    width: calc((100% - 60px));
+    height: 50px;
+    margin: var(--main-margine);
+    padding: var(--main-padding);
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page .footer .copyright,
+.page .footer .design{
+    margin: var(--main-margine );
+    padding: var(--main-padding );
+}
